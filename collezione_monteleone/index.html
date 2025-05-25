@@ -8,7 +8,62 @@
     <link rel="shortcut icon" href="/collezione_monteleone/logo/C0llezione.png" type="image/x-icon">
 </head>
 <body>
-    
-    
+   
+
+<header>
+    <div class="logo">
+        <img src="" alt="">
+    </div>
+    <nav class="nav-links">
+      <a href="#">Sobre Nós</a>
+      <a href="#">Vinhos</a>
+       <a href="#">Feedback</a>
+      <a href="#">Contato</a>
+    </nav>
+    <a href="#" class="btn-header">Cadastra-se</a>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="hero">
+    <div class="carousel-container">
+      <div class="carousel-slide active">
+        <div class="hero-left">
+          <h1>Veja nossos <br><strong>Vinhos</strong></h1>
+          <a href="#" class="btn-main">Veja Mais →</a>
+        </div>
+        <div class="hero-right">
+          <img src="champagne1.png" alt="vinhos 1" />
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="hero-left">
+          <h1>Veja Nossos <br><strong>Vinhos Classicos</strong></h1>
+          <a href="#" class="btn-main">Veja Mais →</a>
+        </div>
+        <div class="hero-right">
+          <img src="champagne2.png" alt="vinhos 2" />
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="hero-left">
+          <h1>Veja Nossos <br><strong>Vinhos Coleção</strong></h1>
+          <a href="#" class="btn-main">Veja Mais </a>
+        </div>
+        <div class="hero-right">
+          <img src="champagne3.png" alt="vinhos 3" />
+        </div>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+  </section>
+
+ <script src="/collezione_monteleone/funcion.js"></script>
 </body>
 </html>
