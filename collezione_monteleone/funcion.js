@@ -3,25 +3,26 @@ const slides = document.querySelectorAll('.carousel-slide');
 const dots = document.querySelectorAll('.dot');
 
 function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove('active'));
-  dots.forEach(dot => dot.classList.remove('active'));
-
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    dots[i].classList.remove('active');
+  });
   slides[index].classList.add('active');
   dots[index].classList.add('active');
   currentSlide = index;
 }
 
-function nextSlide() {
-  let next = (currentSlide + 1) % slides.length;
-  showSlide(next);
-}
-
-setInterval(nextSlide, 5000); // troca automática
-
-function goToSlide(i) {
-  showSlide(i);
+function goToSlide(index) {   
+  showSlide(index);
 }
 
 function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('active');
+  const nav = document.querySelector('.nav-links');
+  nav.classList.toggle('show');
 }
+
+setInterval(() => {
+  let nextSlide = (currentSlide + 1) % slides.length;
+  showSlide(nextSlide);
+}, 4000);
+
