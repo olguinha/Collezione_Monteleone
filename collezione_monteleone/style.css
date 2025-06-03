@@ -40,7 +40,7 @@ header {
 }
 
 .btn-header {
-  background-color: #E70132;
+  background-color: #9C0016;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
@@ -88,6 +88,7 @@ header {
 
 .carousel-slide.active {
   display: flex;
+  background-position: left top;
 }
 
 .carousel-slide h1 {
@@ -207,7 +208,7 @@ footer {
 }
 
 .top-bar {
-  background-color: #8c1d1d;
+  background-color: #9C0016;
   color: white;
   text-align: center;
   padding: 10px;
@@ -258,7 +259,7 @@ footer {
 }
 
 .newsletter button {
-  background-color: #8c1d1d;
+  background-color: #9C0016;
   color: white;
   padding: 8px 12px;
   border: none;
@@ -267,7 +268,7 @@ footer {
 }
 
 .newsletter button:hover {
-  background-color: #a62828;
+  background-color: #9C0016;
 }
 
 .social-media a img {
